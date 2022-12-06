@@ -1,4 +1,4 @@
-const app = require('./src/app');
+const app = require('./src/models2/app');
 
 const DB_PORT = process.env.DB_PORT
 
