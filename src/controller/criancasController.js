@@ -50,14 +50,55 @@ const addNewCrianca = async (req, res) => {
     res.status(500).json(error.message);
   }
 };
+const updateCriancas = async (req, res) => {
 
+    try {
 
+    const { name, age, clothesSize, shoe, gender } = req.body
+
+      const updateCriancas = await CriancasModel.findByIdAndUpdate(req.params.id,{
+        name, age, clothesSize, shoe, gender
+      });
+
+      const updatedCriancas = await CriancasModel.findById(req.params.id)
+      res.status(200).json(updateCriancas)
+
+      res.status(201).json({ message: "Criança successfully update", updateCriancas });
+    } catch (error) {
+    console.error(error);
+    res.status(500).json(error.message);
+  }
+};
+const deleteConsole = async (req, res) => {
+    try {
+      const { id } = req.params;
+      const deleteConsole = await ConsolesModel.findByIdAndDelete(id);
+      const message = `Console with id ${deleteConsole.name} was successfully deleted`;
+      res.status(200).json({ message });
+    } catch (error){
+      console.error(error);
+      res.status(500).json({ message: error.message });
+    };
+  };
+  const deleteCriancasById = async (req, res) => {
+    try {
+      const { id } = req.params;
+      const deleteCriancasById = await CriancasModel.findByIdAndDelete(id);
+      const message = `Criancas with id ${deleteCriancasById.name} was successfully deleted`;
+      res.status(200).json({ message });
+    } catch (error){
+      console.error(error);
+      res.status(500).json({ message: error.message });
+    };
+  };
 
  
 module.exports = {
   findAllCriancas,
   findCriancaById,
-  addNewCrianca
+  addNewCrianca,
+  updateCriancas,
+  deleteCriancasById
 
 }
 
