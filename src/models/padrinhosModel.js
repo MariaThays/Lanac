@@ -34,7 +34,7 @@ const padrinhoSchema = mongoose.Schema({
     
 }, {timestamps: true})
 
-
 const Model = mongoose.model('padrinho',padrinhoSchema)
 
 module.exports = Model
+

@@ -1,6 +1,5 @@
 const CriancasModel = require('../models/criancasModel')
 
-
 const findAllCriancas = async (req, res) => {
 
   try { 
@@ -33,11 +32,32 @@ const findCriancaById = async (req, res) => {
   };
 };
 
-       
+const addNewCrianca = async (req, res) => {
+
+    try {
+
+    const { name, age, clothesSize, shoe, gender } = req.body
+
+      const newCrianca = new CriancasModel({
+        name, age, clothesSize, shoe, gender
+      })
+
+      const savedCrianca = await newCrianca.save();
+
+      res.status(201).json({ message: "New crianca successfully added", savedCrianca });
+    } catch (error) {
+    console.error(error);
+    res.status(500).json(error.message);
+  }
+};
+
+
 
  
 module.exports = {
   findAllCriancas,
   findCriancaById,
+  addNewCrianca
 
 }
+
