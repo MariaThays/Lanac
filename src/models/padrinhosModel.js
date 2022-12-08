@@ -5,7 +5,7 @@ const padrinhoSchema = mongoose.Schema({
         type: mongoose.Types.ObjectId,
         default: mongoose.Types.ObjectId
     },
-    fullName:{
+    name:{
         type: String, 
         required: true,  
     },
@@ -21,7 +21,7 @@ const padrinhoSchema = mongoose.Schema({
     },
 
     email:{
-        type: Boolean,
+        type: String,
         required: true
 
     },

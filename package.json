@@ -7,14 +7,18 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.7.5",
     "nodemon": "^2.0.20",
-    "save": "^2.9.0"
+    "save": "^2.9.0",
+    "swagger-autogen": "^2.22.0",
+    "swagger-ui-express": "^4.6.0"
   },
   "name": "projetofinal",
   "description": "Projeto final Reprograma do curso Todas em Tech. Api de Apadrinhamento para o Lar Nazareno da Criança.",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "swagger-autogen": "node swagger.js"
+  
   },
   "repository": {
     "type": "git",

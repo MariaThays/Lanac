@@ -1,0 +1,90 @@
+const { find } = require('../models/padrinhosModel');
+const padrinhosModel = require('../models/padrinhosModel')
+
+
+const addNewPadrinho = async (req, res) => {
+  try {
+    const { name, telephoneOrWhatsapp, adress, email, gender } = req.body
+
+    const newPadrinho = new padrinhosModel({
+      name, telephoneOrWhatsapp, adress, email, gender
+    }
+
+    )
+    const savedPadrinho = await newPadrinho.save();
+
+    res.status(200).json({ message: "Padrinho adicionado com sucesso!", savedPadrinho });
+  }
+  catch (error) {
+    console.error(error);
+    res.status(500).json({ message: error.message });
+  };
+};
+
+const updatePadrinho = async (req, res) => {
+  try {
+    const { name, telephoneOrWhatsapp, adress, email, gender } = req.body
+    const { id } = req.params
+
+    const updatePadrinho = await padrinhosModel.findById(id)
+
+    updatePadrinho.name = name || updatePadrinho.name
+    updatePadrinho.telephoneOrWhatsapp = telephoneOrWhatsapp || updatePadrinho.telephoneOrWhatsapp
+    updatePadrinho.adress = adress || updatePadrinho.adress
+    updatePadrinho.email = email || updatePadrinho.email
+    updatePadrinho.gender = gender || updatePadrinho.gender
+
+    const savedPadrinho = await updatePadrinho.save();
+    res.status(200).json({ message: "Padrinho atualizado com sucesso", savedPadrinho });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  };
+};
+
+const deletePadrinhoById = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const findPadrinho = await padrinhosModel.findById(id);
+
+    if (findPadrinho == null) {
+      return res.status(404).json({ message: `Padrinho com o ${id} não encontrado` })
+    };
+    await findPadrinho.remove();
+    res.status(200).json({ message: `Padrinho com id ${id} foi deletado com sucesso` });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  };
+};
+
+const findAllPadrinhos = async (req, res) => {
+  try {
+    const allPadrinhos = await padrinhosModel.find()
+  } catch {
+    res.status(500).json({ message: error.message });
+  };
+};
+
+const findPadrinhoById = async (req, res) => {
+  try {
+    const findPadrinhoById = await padrinhosModel.findById(req.params.id)
+    
+    if (findPadrinhoById == null) {
+      res.status(404).json({ message: "Padrinho não encontrado" });
+    }
+    res.status(200).json(findPadrinhoById);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  };
+};
+module.exports = {
+
+  addNewPadrinho,
+  updatePadrinho,
+  deletePadrinhoById,
+  findAllPadrinhos,
+  findPadrinhoById
+}
+
+
+
+
