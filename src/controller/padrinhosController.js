@@ -21,20 +21,22 @@ const addNewPadrinho = async (req, res) => {
   };
 };
 
-const updatePadrinho = async (req, res) => {
+const updatePadrinhos = async (req, res) => {
   try {
-    const { name, telephoneOrWhatsapp, adress, email, gender } = req.body
-    const { id } = req.params
+    const { id } = req.params;
+    const { name, telephoneOrWhatsapp, adress, email, gender } = req.body;
+    const findPadrinhos = await padrinhosModel.findById(id);
+    if (findPadrinhos == null) {
+      res.status(404).json({ message: "Padrinho não encontrado" });
+    };
 
-    const updatePadrinho = await padrinhosModel.findById(id)
-
-    updatePadrinho.name = name || updatePadrinho.name
-    updatePadrinho.telephoneOrWhatsapp = telephoneOrWhatsapp || updatePadrinho.telephoneOrWhatsapp
-    updatePadrinho.adress = adress || updatePadrinho.adress
-    updatePadrinho.email = email || updatePadrinho.email
-    updatePadrinho.gender = gender || updatePadrinho.gender
-
-    const savedPadrinho = await updatePadrinho.save();
+    findPadrinhos.name = name || findPadrinhos.name;
+    findPadrinhos.telephoneOrWhatsapp = telephoneOrWhatsapp || findPadrinhos.telephoneOrWhatsapp;
+    findPadrinhos.adress = adress || findPadrinhos.adress;
+    findPadrinhos.email = email || findPadrinhos.email;
+    findPadrinhos.gender = gender || findPadrinhos.gender;
+    
+    const savedPadrinho = await findPadrinhos.save();
     res.status(200).json({ message: "Padrinho atualizado com sucesso", savedPadrinho });
   } catch (error) {
     res.status(500).json({ message: error.message });
@@ -79,7 +81,7 @@ const findPadrinhoById = async (req, res) => {
 module.exports = {
 
   addNewPadrinho,
-  updatePadrinho,
+  updatePadrinhos,
   deletePadrinhoById,
   findAllPadrinhos,
   findPadrinhoById

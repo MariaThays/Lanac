@@ -124,13 +124,13 @@
                 "name": {
                   "example": "any"
                 },
-                "age": {
+                "telephoneOrWhatsapp": {
                   "example": "any"
                 },
-                "clothesSize": {
+                "adress": {
                   "example": "any"
                 },
-                "shoe": {
+                "email": {
                   "example": "any"
                 },
                 "gender": {
@@ -163,7 +163,7 @@
             "schema": {
               "type": "object",
               "properties": {
-                "fullname": {
+                "name": {
                   "example": "any"
                 },
                 "telephoneOrWhatsapp": {
@@ -185,6 +185,61 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/padrinho/{id}": {
+      "delete": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
           },
           "500": {
             "description": "Internal Server Error"

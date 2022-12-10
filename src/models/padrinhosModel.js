@@ -1,40 +1,40 @@
-const mongoose = require ('mongoose')
+const mongoose = require('mongoose')
 
 const padrinhoSchema = mongoose.Schema({
     _id: {
         type: mongoose.Types.ObjectId,
         default: mongoose.Types.ObjectId
     },
-    name:{
-        type: String, 
-        required: true,  
+    name: {
+        type: String,
+        required: true,
     },
 
-    telephoneOrWhatsapp:{
+    telephoneOrWhatsapp: {
         type: Number,
         required: true
     },
 
-    adress:{
+    adress: {
         type: String,
         required: true
     },
 
-    email:{
+    email: {
         type: String,
         required: true
 
     },
-    
-    gender:{
+
+    gender: {
         type: String,
         default: "Não informado"
     }
-    
-    
-}, {timestamps: true})
 
-const Model = mongoose.model('padrinho',padrinhoSchema)
+
+}, { timestamps: true })
+
+const Model = mongoose.model('padrinho', padrinhoSchema)
 
 module.exports = Model
 

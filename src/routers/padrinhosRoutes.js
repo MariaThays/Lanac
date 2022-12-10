@@ -5,7 +5,7 @@ const router = express.Router();
 
 
 router.post("/padrinho", controller .addNewPadrinho);
-router.patch("/atualizar/:id", controller.updatePadrinho)
+router.patch("/atualizarPadrinho/:id", controller.updatePadrinhos)
 router.delete("/padrinho/:id", controller.deletePadrinhoById)
 router.get("/padrinho", controller.findAllPadrinhos)
 router.get("/padrinho/:id", controller.findPadrinhoById)
