@@ -102,10 +102,15 @@ Acesse a documentação [aqui](http://localhost:1313/minha-rota-de-documentacao/
 
 {
     "name": " Naralia Cardoso",
+
     "cpf": 109392920202022,
+
     "telephoneOrWhatsapp": 81983429530,
+
     "adress": "Av.Marcos Freire, 5455",
+
     "email": "ntlcardoso@gmail.com",
+    
     "gender": "feminino"
 }
 
