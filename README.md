@@ -110,31 +110,6 @@ Acesse a documentação [aqui](http://localhost:1313/minha-rota-de-documentacao/
 }
 
 
-## Rotas e Endpoints
-
-
-Rotas de crianças
-
- verbo |   rota       | função
------------------------------------------------------
-get   | /crianca     |listar todas as crianças
-get   | /crianca/:id | retornar criança por id
-post  | /crianca     | cadastrar criança
-patch |/crianca/:id  | Atualizar por id
-delete| /crianca/:id |Deletar cadastro de criança por id
-
-
-Rotas de padrinho
-
-verbo |   rota       | função
------------------------------------------------------
-get   | /padrinho    | listar todos os padrinhos
-get   | /padrinho/:id| retornar padrinho por id
-post  | /padrinho    | cadastrar padrinho
-put   |/padrinho/:id | Atualizar cadastro de padrinho
-delete| /padrinho/:id| DEletar cadastro de padrinho por id
-```
-
 ## Contribua com esse projeto
 
 
@@ -151,12 +126,6 @@ Commit as alterações feitas e abra um pull request
 ## 🌻 Desenvolvedora
 
 
-</br>
-
-<p align="center">
-
-</a>
-</p>
 
 <p align="center"> Desenvolvido por <a href="https://www.linkedin.com/in/maria-thays-bb1902152/ target="_blank"><img src="https://img.shields.io/badge/-Maria_Thays-blue?style=flat-square&logo=Linkedin&logoColor=white&link=hhttps://www.linkedin.com/in/maria-thays-bb1902152/" target="_blank"></a> </p>
 
