@@ -89,14 +89,19 @@ Acesse a documentação [aqui](http://localhost:1313/minha-rota-de-documentacao/
 
 
 Faça o fork do projeto;
+
 Crie uma branch para realizar suas alterações: git checkout -b feature/nome-da-nova-branch
+
 Commit as alterações feitas e abra um pull request
+
 
 
 ## Agradecimentos
 
  Gratidão a todos que fazem a {reprograma} acontecer, vocês passaram pela minha vida e me transformaram. A todas as mulheres incríveis da on19 que eu tive a SORTE de conhecer, vocês foram fundamentais nessa caminhada. Grata a todas as professoras por tanto empenho e paciência, vocês são incríveis. Em especial a minha amiga Shirlene por todo apoio durante todo o curso, sem você eu não conseguiria.
  A minha família, amigos e todos que fizeram parte da construção desse sonho.
+ 💜🦋
+ 
 
 ## 🌻 Desenvolvedora
 
