@@ -71,18 +71,6 @@ Acesse a documentação [aqui](http://localhost:1313/minha-rota-de-documentacao/
 ├── 📄server.js
 ├── 📄swagger.js
 
-#### Instalação
-
-bash
-# Clonar o repositório
-$ git clone https://github.com/MariaThays/Lanac.gitProjeto-Livre-FlagFeminino
-# Entrar na pasta do repositório
-$ cd Lanac
-# Instalar as dependências
-$ npm install
-# Executar o servidor
-$ npm start
-
  
 ## Funcionalidades
 
@@ -100,7 +88,7 @@ $ npm start
 * A API deve permitir deletar cadastro de  padrinho;
 
 ## Exemplo de estrutura de cadastro de criança :
-yaml
+
 {
   "name": "Matheus Henrique", 
   "age": 6,
@@ -112,7 +100,6 @@ yaml
  
 ## Exemplo de estrutura de cadastro de padrinho :
 
-yaml
 {
     "name": " Naralia Cardoso",
     "cpf": 109392920202022,
@@ -150,9 +137,11 @@ delete| /padrinho/:id| DEletar cadastro de padrinho por id
 
 ## Contribua com esse projeto
 
+
 Faça o fork do projeto;
 Crie uma branch para realizar suas alterações: git checkout -b feature/nome-da-nova-branch
 Commit as alterações feitas e abra um pull request
+
 
 ## Agradecimentos
 
@@ -169,7 +158,7 @@ Commit as alterações feitas e abra um pull request
 </a>
 </p>
 
-<p align="center"> Desenvolvido por <a href="https://www.linkedin.com/in/maria-thays-bb1902152/ target="_blank"><img src="https://img.shields.io/badge/-Ana_Lidia-blue?style=flat-square&logo=Linkedin&logoColor=white&link=hhttps://www.linkedin.com/in/maria-thays-bb1902152/" target="_blank"></a> </p>
+<p align="center"> Desenvolvido por <a href="https://www.linkedin.com/in/maria-thays-bb1902152/ target="_blank"><img src="https://img.shields.io/badge/-Maria_Thays-blue?style=flat-square&logo=Linkedin&logoColor=white&link=hhttps://www.linkedin.com/in/maria-thays-bb1902152/" target="_blank"></a> </p>
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/84551213/171416454-ab93ab7f-e5a0-4276-81ec-4f5cb79dff31.png" alt="logo da reprograma" border="0" width = "200" /> <p align="center"></p>
