@@ -17,6 +17,7 @@ Todos os anos, no mês de dezembro, a Lanac faz um projeto de apadrinhamento par
 O Objetivo deste projeto é cadastrar pessoas que tenham o desejo de apadrinhar as crianças da comunidade,que vivem em situação de vunerabilidade.
 
 Acesse a aplicação  [aqui]()  |
+
 Acesse a documentação [aqui](http://localhost:1313/minha-rota-de-documentacao/)
 
 
@@ -45,31 +46,6 @@ Acesse a documentação [aqui](http://localhost:1313/minha-rota-de-documentacao/
 
 ## Arquitetura da API
  
-  📁Lanac
-├── 📁node_modules
-├── 📁src
-│   ├── 📁controller
-        ├── 📄criancasController.js
-|       ├── 📄padrinhosController.js
-|   ├── 📁database
-|       ├── 📄dbConnect.js
-    ├── 📁models
-|       ├── 📄criancasModel.js
-|       ├── 📄padrinhosModel.js
-│   ├── 📁routes
-│       ├── 📄criancaRoutes.js
-        ├── 📄padrinhoRoutes.js
-|   ├── app.js
-├── 📁swagger
-|   ├── 📄swagger_output.json
-├── 📄.env
-├── 📄.env.example 
-├── 📄.gitignore
-├── 📄package-lock.json
-├── 📄package.json
-├── 📄README.md
-├── 📄server.js
-├── 📄swagger.js
 
  
 ## Funcionalidades
@@ -88,33 +64,27 @@ Acesse a documentação [aqui](http://localhost:1313/minha-rota-de-documentacao/
 * A API deve permitir deletar cadastro de  padrinho;
 
 ## Exemplo de estrutura de cadastro de criança :
-
+```yaml
 {
   "name": "Matheus Henrique", 
-  "age": 6,
-  "clothesSize": "Blusa m, short G",
-  "shoe": 33,
+  "age": 8,
+  "clothesSize": "Blusa tamanho M, short 32",
+  "shoe": "32",
   "gender": "masculino"
 }
-
+```
  
 ## Exemplo de estrutura de cadastro de padrinho :
 
+```yaml
 {
-    "name": " Naralia Cardoso",
-
-    "cpf": 109392920202022,
-
-    "telephoneOrWhatsapp": 81983429530,
-
-    "adress": "Av.Marcos Freire, 5455",
-
-    "email": "ntlcardoso@gmail.com",
-    
+    "name": " Natalia Cardoso",
+    "telephoneOrWhatsapp": 8198736900,
+    "adress": "Av. Marlon Barros, 125",
+    "email": "cardoso@gmail.com",
     "gender": "feminino"
 }
-
-
+```
 ## Contribua com esse projeto
 
 
