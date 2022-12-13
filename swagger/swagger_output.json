@@ -124,13 +124,13 @@
                 "name": {
                   "example": "any"
                 },
-                "telephoneOrWhatsapp": {
+                "age": {
                   "example": "any"
                 },
-                "adress": {
+                "clothesSize": {
                   "example": "any"
                 },
-                "email": {
+                "shoe": {
                   "example": "any"
                 },
                 "gender": {
@@ -143,9 +143,6 @@
         "responses": {
           "200": {
             "description": "OK"
-          },
-          "201": {
-            "description": "Created"
           },
           "500": {
             "description": "Internal Server Error"
@@ -195,6 +192,54 @@
         "description": "",
         "parameters": [],
         "responses": {
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/atualizarPadrinho/{id}": {
+      "patch": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "example": "any"
+                },
+                "telephoneOrWhatsapp": {
+                  "example": "any"
+                },
+                "adress": {
+                  "example": "any"
+                },
+                "email": {
+                  "example": "any"
+                },
+                "gender": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          },
           "500": {
             "description": "Internal Server Error"
           }
