@@ -22,6 +22,50 @@ Acesse a documentação [aqui](http://localhost:1313/minha-rota-de-documentacao/
 
 
 
+## 📁 Arquitetura do Projeto
+
+<br>
+
+```
+ 📁PROJETO FINAL
+   |
+   |--📁Lanac
+   |
+   |--📁node_modules
+   |
+   |--📁 src
+   |  ||
+   |  ||
+   |  ||--📁 controllers
+   |  |    |- 📄 criancasController.js
+   |  |    |- 📄 padrinhosController.js
+   |  |
+   |  ||--📁 database
+   |  |    |- 📄 dbConnect.js
+   |  |
+   |  ||--📁 models
+   |  |    |- 📄 criancasModel.js
+   |  |    |- 📄 padrinhosModel.js
+   |  |
+   |  ||--📁 routes
+   |  |    |- 📄 criancasRoutes.js
+   |  |    |- 📄 padrinhosRoutes.js
+   |  ||-📄 app.js
+   |  |
+   |  |--📁 swagger
+   |  |   |- 📄 swagger_output.json
+   |  |
+   |- 📄 .env
+   |- 📄 .env.example
+   |- 📄 .gitignore
+   |- 📄 package-lock.json
+   |- 📄 package.json
+   |- 📄 README.md
+   |- 📄 server.js
+   |- 📄 swagger.js
+```
+
+
 ##  Tecnologias e Dependências Utilizadas
 
 <br>
