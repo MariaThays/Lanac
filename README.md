@@ -68,7 +68,7 @@ Acesse a documentação [aqui](http://localhost:1313/minha-rota-de-documentacao/
 {
   "name": "Matheus Henrique", 
   "age": 8,
-  "clothesSize": "Blusa tamanho M, short 32",
+  "clothesSize": "Blusa tamanho Pgit , short 32",
   "shoe": "32",
   "gender": "masculino"
 }
