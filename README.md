@@ -22,9 +22,8 @@ Acesse a documentação [aqui](http://localhost:1313/minha-rota-de-documentacao/
 
 
 
-## 📁 Arquitetura do Projeto
+## Arquitetura do Projeto
 
-<br>
 
 ```
  📁PROJETO FINAL
