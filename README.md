@@ -1,5 +1,9 @@
 <h1 align="center"> Projeto Final {Reprograma} - Lanac (Lar Nazareno da Criança)</h1>
 
+
+![12 de outubro Post de Instagram dia das Crianças colorido e divertido](https://user-images.githubusercontent.com/109323347/207756221-5b5cf408-5e8b-416f-9ecd-327232b968df.png)
+
+
 <h1 align="center">
 <img src="public/images/crianca.gif" alt="Menino de braços abertos" width="500" height="500" /> 
 </h1>
