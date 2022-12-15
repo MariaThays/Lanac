@@ -1,7 +1,7 @@
 <h1 align="center"> Projeto Final {Reprograma} - Lanac (Lar Nazareno da Criança)</h1>
 
 
-![12 de outubro Post de Instagram dia das Crianças colorido e divertido](https://user-images.githubusercontent.com/109323347/207756221-5b5cf408-5e8b-416f-9ecd-327232b968df.png)
+![12 de outubro Post de Instagram dia das Crianças colorido e divertido](https://user-images.githubusercontent.com/109323347/207756802-053f3578-978d-443c-b5a7-114feaa40f1a.gif)
 
 
 <h1 align="center">
