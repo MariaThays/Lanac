@@ -135,9 +135,13 @@ Acesse a documentação [aqui](http://localhost:1313/minha-rota-de-documentacao/
 Faça o fork do projeto;
 
 Crie uma branch para realizar suas alterações: git checkout -b feature/nome-da-nova-branch
+
 Instale as dependências:
+
 $ npm install
+
 $ npm install dotenv --save
+
 Commit as alterações feitas e abra um pull request
 
 
