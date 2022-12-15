@@ -18,7 +18,7 @@ O Objetivo deste projeto é cadastrar pessoas que tenham o desejo de apadrinhar 
 
 Acesse a aplicação  [aqui]()  |
 
-Acesse a documentação [aqui](http://localhost:1313/minha-rota-de-documentacao/)
+Acesse a documentação [aqui](http://localhost:1313/minha-rota-de-documentacao/#/default/post_padrinho)
 
 
 
@@ -85,9 +85,6 @@ Acesse a documentação [aqui](http://localhost:1313/minha-rota-de-documentacao/
 | `dotenv`| Dependência  para gerenciar facilmente variáveis de ambiente, não é obrigatório para JWT, mas uma boa prática para configurações em geral.|
 | `swagger`| Gera a documentação.|
 | `heroku`| hospeda a documentação.|
-
-
-## Arquitetura da API
  
 
  
