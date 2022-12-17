@@ -22,7 +22,7 @@ O Objetivo deste projeto é cadastrar pessoas que tenham o desejo de apadrinhar 
 
 ## Apresentação
 
-Apresentação  [aqui]([https://projeto-final-lanac.onrender.com](https://www.canva.com/design/DAFUysD5ed8/WTceZlZzV6QfSo9agXVUYw/view?utm_content=DAFUysD5ed8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink#6)
+Apresentação  [aqui](https://www.canva.com/design/DAFUysD5ed8/WTceZlZzV6QfSo9agXVUYw/view?utm_content=DAFUysD5ed8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink#1)
 
 
 ## Documentação
